@@ -1,8 +1,8 @@
 <div [ngClass]="setClasses()">
     <p>
-        <input type="checkbox">
-        <span class="complete">{{ todo.title }}</span>
-        <button type="button" class="btn btn-sm">
+        <input (change)="onToggle(todo)" class="mr-3" type="checkbox">
+        <span>{{ todo.title }}</span>
+        <button (click)="onDelete(todo)" type="button" class="btn btn-sm">
             <span>&times;</span>
         </button>
     </p>

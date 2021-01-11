@@ -10151,3 +10151,7 @@ th {
 .card-title, .card-header {
   color: inherit;
 }
+
+.is-complete{
+  text-decoration: line-through;
+}
